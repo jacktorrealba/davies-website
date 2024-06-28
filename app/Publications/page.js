@@ -125,7 +125,7 @@ const Publications = () => {
                                 </ListItem>
                                 <ListItem className="publicationLink">
                                     <Link className="pinkLink">
-                                        Dr. Tracy Hadden Loh: What's Next for Downtowns?
+                                        Dr. Tracy Hadden Loh: What&apos;s Next for Downtowns?
                                     </Link>
                                     <Text className="publicationDate">
                                         27 July 2021

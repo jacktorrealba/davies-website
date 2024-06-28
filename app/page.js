@@ -10,7 +10,7 @@ export default function Home() {
       <PageTransition>
         <Box h="auto">
           <Heading p="5">
-              Welcome to Davie Loria's portfolio. 
+              Welcome to Davie Loria&apos;s portfolio. 
           </Heading>
         </Box>
         <Box p="5">

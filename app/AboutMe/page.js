@@ -25,7 +25,7 @@ const AboutMe = () => {
                                 She is currently a doctoral student at Stevens Institute of Technology in Hoboken, NJ 
                                 working towards a <Text as="span" className="boldText"> Ph.D. in Physics</Text> with an estimated completion of May 2027. 
                                 She received a <Text as="span" className="boldText"> Certificate in Photonics</Text> in May 2024, 
-                                and will receive a <Text as="span" className="boldText"> Master's in Physics</Text> in December 2024.
+                                and will receive a <Text as="span" className="boldText"> Master&apos;s in Physics</Text> in December 2024.
                             </Box>
                             <Box className="aboutMeBox">
                                 Her research focuses on satellite remote sensing of <Text as="span" className="boldText"> aerosol-cloud-radiation-climate</Text> interactions, modeling, and feedback 
