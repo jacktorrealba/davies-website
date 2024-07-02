@@ -15,6 +15,17 @@ const Publications = () => {
                         <Box p="0rem 1rem 0rem 1rem">
                             <List spacing={6}>
                                 <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-marc-garcia-student-career/" target="_blank" rel="noopener noreferrer">
+                                        Intern Spotlight: Marc Garcia - Student Career
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        1 July 2024
+                                    </Text>
+                                    <Text>
+                                        Interview with Marc Garcia, EarthScope&apos;s Summer 2024 Cloud On-Ramp Career Intern.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-quincey-nielson-student-career/" target="_blank" rel="noopener noreferrer">
                                         Intern Spotlight: Quincey Nielson - Student Career
                                     </Link>
@@ -26,7 +37,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/what-is/das/" target="_blank" rel="noopener noreferrer">
                                         What is Distributed Acoustic Sensing?
                                     </Link>
                                     <Text className="publicationDate">
@@ -37,7 +48,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://planetforward.org/story/playing-god-new-research-suggests-a-way-to-stimulate-rainfall/" target="_blank" rel="noopener noreferrer">
                                         Playing God? New Research Suggests a way to Stimulate Rainfall
                                     </Link>
                                     <Text className="publicationDate">
@@ -48,7 +59,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://bpb-us-e1.wpmucdn.com/blogs.gwu.edu/dist/7/135/files/2022/06/Research-Showcase-2022AbstractBookletFINAL.pdf" target="_blank" rel="noopener noreferrer">
                                         No Matter How the Dice Fall - Looking into Casino Dice
                                     </Link>
                                     <Text className="publicationDate">
@@ -59,7 +70,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/climate/extreme-temperatures/" target="_blank" rel="noopener noreferrer">
                                         Dr. John J. Wiens: Hot Days, Disappearing Species
                                     </Link>
                                     <Text className="publicationDate">
@@ -72,7 +83,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/wildfires/smoke-childrens-health/" target="_blank" rel="noopener noreferrer">
                                         Dr. Stephanie Holm: Wildfire Smoke and Children&apos;s Health
                                     </Link>
                                     <Text className="publicationDate">
@@ -84,7 +95,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/climate/heat-agriculture/" target="_blank" rel="noopener noreferrer">
                                         Dr. Wolfram Schlenker: Rising Temperatures and Agriculture
                                     </Link>
                                     <Text className="publicationDate">
@@ -96,7 +107,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/social-sciences/eviction-moratorium/" target="_blank" rel="noopener noreferrer">
                                         Dr. Eva Rosen: Evictions
                                     </Link>
                                     <Text className="publicationDate">
@@ -110,7 +121,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/social-sciences/unemployment-unfilled-jobs/" target="_blank" rel="noopener noreferrer">
                                         Dr. Kathryn Anne Edwards: Unemployment and Unfilled Jobs
                                     </Link>
                                     <Text className="publicationDate">
@@ -124,7 +135,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/social-sciences/commercial-real-estate/" target="_blank" rel="noopener noreferrer">
                                         Dr. Tracy Hadden Loh: What&apos;s Next for Downtowns?
                                     </Link>
                                     <Text className="publicationDate">
@@ -137,7 +148,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://www.sciline.org/tech/ransomware/" target="_blank" rel="noopener noreferrer">
                                         Dr. Josephine Wolff: Ransomware
                                     </Link>
                                     <Text className="publicationDate">
@@ -150,7 +161,7 @@ const Publications = () => {
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink">
+                                    <Link className="pinkLink" href="https://pen.org/the-pen-ten-with-lindsey-fitzharris/" target="_blank" rel="noopener noreferrer">
                                         The PEN Ten with Lindsey Fitzharris
                                     </Link>
                                     <Text className="publicationDate">

@@ -31,6 +31,7 @@ body {
 .myNavLink {
   font-weight: bold;
   font-size: 28px;
+  display: inline-block;
 }
 .myNavLink:hover {
   color: var(--pink) !important;
@@ -70,6 +71,15 @@ body {
   font-size: 45px;
 }
 
+#publicationsPageBox {
+  padding-bottom: 4rem;
+}
+
+#aboutMePageBox {
+  padding-bottom: 4rem;
+}
+
+
 @media screen and (width < 550px) {
 
   #main {
@@ -79,10 +89,14 @@ body {
 
   #publicationsPageBox {
     overflow-y: unset;
+    padding-bottom: 4rem;
+    height: auto;
   }
 
   #aboutMePageBox{
     overflow-y: unset;
+    padding-bottom: 4rem;
+    height:auto;
   }
 
   .myNavLink {

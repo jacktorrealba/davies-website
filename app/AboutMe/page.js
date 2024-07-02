@@ -17,15 +17,15 @@ const AboutMe = () => {
                             </Box>
                             <Box className="aboutMeBox">
                                 She attended <Link className="pinkLink-sm" href="https://www.gwu.edu/" target="_blank" rel="noopener noreferrer">The George Washington University</Link> in Washington, D.C. and earned a 
-                                <Text as="span" className="boldText"> Bachelor of Science in Physics</Text> and minors in 
-                                <Text as="span" className="boldText"> Journalism & Mass Communications</Text> and 
-                                <Text as="span" className="boldText"> Mathematics</Text>.
+                                <Text as="span" className="boldText"> Bachelor of Science in physics</Text> and minors in 
+                                <Text as="span" className="boldText"> journalism & mass communications</Text> and 
+                                <Text as="span" className="boldText"> mathematics</Text>.
                             </Box>
                             <Box className="aboutMeBox">
-                                She is currently a doctoral student at Stevens Institute of Technology in Hoboken, NJ 
-                                working towards a <Text as="span" className="boldText"> Ph.D. in Physics</Text> with an estimated completion of May 2027. 
-                                She received a <Text as="span" className="boldText"> Certificate in Photonics</Text> in May 2024, 
-                                and will receive a <Text as="span" className="boldText"> Master&apos;s in Physics</Text> in December 2024.
+                                She is currently a doctoral student at <Link className="pinkLink-sm" href="https://www.stevens.edu/" target="_blank" rel="noopener noreferrer">Stevens Institute of Technology</Link> in Hoboken, NJ 
+                                working towards a <Text as="span" className="boldText"> Ph.D. in physics</Text> with an estimated completion of May 2027. 
+                                She received a <Text as="span" className="boldText"> certificate in photonics</Text> in May 2024, 
+                                and will receive a <Text as="span" className="boldText"> master&apos;s in physics</Text> in December 2024.
                             </Box>
                             <Box className="aboutMeBox">
                                 Her research focuses on satellite remote sensing of <Text as="span" className="boldText"> aerosol-cloud-radiation-climate</Text> interactions, modeling, and feedback 
@@ -34,7 +34,7 @@ const AboutMe = () => {
                                 <Link href="https://www.stevens.edu/light-and-life-laboratory" className="pinkLink-sm" target="_blank" rel="noopener noreferrer"> Light and Life Laboratory</Link> at Stevens.
                             </Box>
                             <Box className="aboutMeBox">
-                                All research and career opportunities she has done have had an undertone of <Text as="span" className="boldText"> science communications</Text> 
+                                All research and career opportunities she has done have had an undertone of <Text as="span" className="boldText"> science communications </Text> 
                                 and an ultimate goal of communicating her work—as well as work done by other research groups—to the 
                                 general public. Few courses offered at GW were scicomm specific, so all work she did in journalism 
                                 courses she took in undergrad &#40;when able and not inherently a scicomm course&#41; were science 
