@@ -9,11 +9,23 @@ const Publications = () => {
             <ChakraProvider>
                 <PageTransition>
                     <Box h="100vh" id="publicationsPageBox" overflowY="scroll">
-                        <Heading p="1rem 0 1rem 1rem">
+                        <Heading p="2rem 0 1rem 1rem">
                             PUBLICATIONS
                         </Heading>
-                        <Box p="0rem 1rem 0rem 1rem">
+                        <Box p="0rem 3rem 0rem 3rem">
                             <List spacing={6}>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-marc-garcia-student-career/" target="_blank" rel="noopener noreferrer">
+                                        Information revealed by 2018 Kīlauea eruptions leads to new caldera models
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        3 July 2024
+                                    </Text>
+                                    <Text>
+                                        Article about a new paper that lays out a helpful timeline of the Kīlauea eruptions in 2018, 
+                                        as well as addresses the applications for the future from the collected data.
+                                    </Text>
+                                </ListItem>
                                 <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-marc-garcia-student-career/" target="_blank" rel="noopener noreferrer">
                                         Intern Spotlight: Marc Garcia - Student Career

@@ -42,6 +42,7 @@ body {
 }
 
 .pinkLink {
+  line-height: 2px;
   font-size: 28px;
   font-weight: bold;
   color: var(--pink) !important;
