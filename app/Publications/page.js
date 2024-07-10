@@ -15,6 +15,19 @@ const Publications = () => {
                         <Box p="0rem 3rem 0rem 3rem">
                             <List spacing={6}>
                                 <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/information-revealed-by-2018-kilauea-eruptions-leads-to-new-caldera-models/" target="_blank" rel="noopener noreferrer">
+                                        NSF SAGE/GAGE Community Science Workshop highlights the breadth of the geophysical toolkit
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        10 July 2024
+                                    </Text>
+                                    <Text>
+                                        The techniques in our geophysical toolkit have grown exponentially over the years. 
+                                        By understanding research in these fields using these tools, 
+                                        we can see the applications to geophysics and bettering society.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-marc-garcia-student-career/" target="_blank" rel="noopener noreferrer">
                                         Information revealed by 2018 Kīlauea eruptions leads to new caldera models
                                     </Link>
