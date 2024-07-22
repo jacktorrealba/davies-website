@@ -15,6 +15,63 @@ const Publications = () => {
                         <Box p="0rem 3rem 0rem 3rem">
                             <List spacing={6}>
                                 <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/remote-sensing-and-armed-conflict-a-unique-humanitarian-role-for-geophysics/" target="_blank" rel="noopener noreferrer">
+                                        Remote sensing and armed conflict—a unique humanitarian role for geophysics
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        22 July 2024
+                                    </Text>
+                                    <Text>
+                                        Remote sensing can be essential for rapidly collecting information about destruction levels, famine, 
+                                        and other humanitarian questions in areas where ground investigations are difficult, as can be the case in times of conflict.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-juan-cruz-resess-intern/" target="_blank" rel="noopener noreferrer">
+                                        Intern Spotlight: Juan Cruz (RESESS)
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        16 July 2024
+                                    </Text>
+                                    <Text>
+                                        Interview with Juan Cruz, one of EarthScope&apos;s Summer 2024 RESESS Interns working in Boulder, Colorado.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.usgs.gov/observatories/yvo/news/yellowstone-gps-stations-help-monitor-solar-storms-cause-widespread-auroras" target="_blank" rel="noopener noreferrer">
+                                        Yellowstone GPS stations help to monitor solar storms that cause widespread auroras
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        15 July 2024
+                                    </Text>
+                                    <Text>
+                                        For a couple nights in May an extreme solar storm created a beautiful night sky for many people in areas that normally are too far away to see auroras. 
+                                        Some of the GPS stations in Yellowstone are among the tools used to monitor space weather like that solar storm.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-hayley-bricker-davie-loria-student-careers/" target="_blank" rel="noopener noreferrer">
+                                        Intern Spotlight: Hayley Bricker & Davie Loria (Student Careers)
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        11 July 2024
+                                    </Text>
+                                    <Text>
+                                        Interview with Hayley Bricker and Davie Loria, EarthScope&apos;s Summer 2024 Science Communication Career Interns.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/what-is/tls/" target="_blank" rel="noopener noreferrer">
+                                        What is Terrestrial Laser Scanning?
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        11 July 2024
+                                    </Text>
+                                    <Text>
+                                        Overview of Terrestrial Laser Scanning (TLS) for EarthScope&apos;s “What is ___?” series.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/news/information-revealed-by-2018-kilauea-eruptions-leads-to-new-caldera-models/" target="_blank" rel="noopener noreferrer">
                                         NSF SAGE/GAGE Community Science Workshop highlights the breadth of the geophysical toolkit
                                     </Link>
