@@ -39,6 +39,11 @@ export default function Layout({children}) {
                     <Text className="navLinkText">CONTACT</Text>
                   </Link>
               </ListItem>
+              <ListItem>
+              <Link id="linkedIn-link" href="https://www.linkedin.com/in/davie-loria-262587193/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size="50px"></FaLinkedin>
+          </Link>
+              </ListItem>
             </List>
           </Box>
           <Box id="pageContents" w="50%">

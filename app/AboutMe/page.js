@@ -1,6 +1,6 @@
 'use client'
-import { ChakraProvider, Heading, Box, Text, Link} from "@chakra-ui/react"
-import PageTransition from "@/components/page-transition"
+import { ChakraProvider, Heading, Box, Text, Link} from "@chakra-ui/react";
+import PageTransition from "@/components/page-transition";
 
 const AboutMe = () => {
     return (

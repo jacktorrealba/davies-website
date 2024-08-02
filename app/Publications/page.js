@@ -1,7 +1,6 @@
 'use client'
-import PageTransition from "@/components/page-transition"
+import PageTransition from "@/components/page-transition";
 import { ChakraProvider , Heading, Link, Center, Text, Box, List, ListItem} from "@chakra-ui/react";
-
 
 const Publications = () => {
     return (
@@ -9,7 +8,7 @@ const Publications = () => {
             <ChakraProvider>
                 <PageTransition>
                     <Box h="100vh" id="publicationsPageBox" overflowY="scroll">
-                        <Heading p="2rem 0 1rem 1rem">
+                        <Heading p="2rem 0 3rem 1rem">
                             PUBLICATIONS
                         </Heading>
                         <Box p="0rem 3rem 0rem 3rem">
