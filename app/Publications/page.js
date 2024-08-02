@@ -15,6 +15,51 @@ const Publications = () => {
                         <Box p="0rem 3rem 0rem 3rem">
                             <List spacing={6}>
                                 <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/if-you-feel-it-chase-it-using-seismic-signals-to-detect-tornadoes/" target="_blank" rel="noopener noreferrer">
+                                        If you feel it, chase it: using seismic signals to detect tornadoes
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        31 July 2024
+                                    </Text>
+                                    <Text>
+                                        The threat of destruction and injury the tornado chasers show viewers in the 2024 movie “Twisters” is real, 
+                                        so what can be done currently to warn against tornadoes, and how do we detect and track them using geophysics?
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/natural-hazards-put-some-species-at-increased-risk-of-extinction/" target="_blank" rel="noopener noreferrer">
+                                        Natural hazards put some species at increased risk of extinction
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        30 July 2024
+                                    </Text>
+                                    <Text>
+                                    A new study looks at natural hazards occurring where at-risk species live in order to help guide conservation efforts for ensuring their survival.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/what-is/uas/" target="_blank" rel="noopener noreferrer">
+                                        What are Uncrewed Aerial Systems?
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        24 July 2024
+                                    </Text>
+                                    <Text>
+                                        Overview of Unscrewed Aerial Systems (UAS) for EarthScope&apos;s “What is ___?” series.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
+                                    <Link className="pinkLink" href="https://www.earthscope.org/news/intern-spotlight-summer-czarnowski-resess/" target="_blank" rel="noopener noreferrer">
+                                        Intern Spotlight: Summer Czarnowski (RESESS)
+                                    </Link>
+                                    <Text className="publicationDate">
+                                        23 July 2024
+                                    </Text>
+                                    <Text>
+                                        Interview with Summer Czarnowski, one of EarthScope's Summer 2024 RESESS Interns working at Sandia National Labs in Albuquerque, New Mexico.
+                                    </Text>
+                                </ListItem>
+                                <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/news/remote-sensing-and-armed-conflict-a-unique-humanitarian-role-for-geophysics/" target="_blank" rel="noopener noreferrer">
                                         Remote sensing and armed conflict—a unique humanitarian role for geophysics
                                     </Link>
