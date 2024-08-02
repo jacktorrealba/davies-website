@@ -56,7 +56,7 @@ const Publications = () => {
                                         23 July 2024
                                     </Text>
                                     <Text>
-                                        Interview with Summer Czarnowski, one of EarthScope's Summer 2024 RESESS Interns working at Sandia National Labs in Albuquerque, New Mexico.
+                                        Interview with Summer Czarnowski, one of EarthScope&apos;s Summer 2024 RESESS Interns working at Sandia National Labs in Albuquerque, New Mexico.
                                     </Text>
                                 </ListItem>
                                 <ListItem className="publicationLink">
