@@ -1,12 +1,11 @@
-'use client'
+"use client"
 import { ChakraProvider, Heading, Box, Text, Link} from "@chakra-ui/react";
-import PageTransition from "@/components/page-transition";
 
 const AboutMe = () => {
     return (
         <>
             <ChakraProvider>
-                <PageTransition>
+                
                     <Box h="100vh" id="aboutMePageBox" overflowY="scroll">
                         <Heading p="2rem 0 1rem 1rem">
                             ABOUT
@@ -55,7 +54,6 @@ const AboutMe = () => {
                             </Box>
                         </Box>
                     </Box>
-                </PageTransition>
             </ChakraProvider>
         </>
     )

@@ -1,13 +1,13 @@
 'use client'
 import { ChakraProvider , Box , Flex, Text, Link, Heading, Center, Image, Card, CardHeader, CardBody, CardFooter, Button, Divider, AbsoluteCenter} from "@chakra-ui/react";
-import PageTransition from "@/components/page-transition"
+
 
 
 export default function Home() {
   return (
     <>
     <ChakraProvider>
-      <PageTransition>
+      
         <Box h="auto">
           <Heading p="5">
               Welcome to Davie Loria&apos;s portfolio. 
@@ -51,8 +51,6 @@ export default function Home() {
             </CardBody>
           </Card>
         </Flex>
-        
-      </PageTransition>
     </ChakraProvider>
     </>
   )

@@ -1,18 +1,52 @@
-'use client'
-import PageTransition from "@/components/page-transition";
 import { ChakraProvider , Heading, Link, Center, Text, Box, List, ListItem} from "@chakra-ui/react";
+import {formatDate} from '@/utils/dateUtils';
 
-const Publications = () => {
+export function getApiURL() {
+    const production = process.env.NODE_ENV === 'production'
+    return production ? 'https://davieloria.vercel.app/api/publications' : 'http://localhost:3000/api/publications'
+}
+const getPublications = async() => {
+    try {
+        const res = await fetch(getApiURL(), {
+            cache: 'no-store',
+        });
+        if (!res.ok) {
+            throw new Error('Failed to failed to fetch publications')
+        }
+        return res.json();
+    } catch (error) {
+        throw new Error(error);
+        
+    }
+}
+export default async function Publications() {
+    const { publications } = await getPublications();
     return (
         <>
             <ChakraProvider>
-                <PageTransition>
                     <Box h="100vh" id="publicationsPageBox" overflowY="scroll">
                         <Heading p="2rem 0 3rem 1rem">
                             PUBLICATIONS
                         </Heading>
                         <Box p="0rem 3rem 0rem 3rem">
                             <List spacing={6}>
+                                {publications.map((p) => (
+                                    
+                                    <ListItem key={p._id} className="publicationLink">
+                                        <Link className="pinkLink" href={p.url}target="_blank" rel="noopener noreferrer">
+                                            {p.title}
+                                        </Link>
+                                        <Text className="publicationDate">
+                                            {formatDate(p.datePublished)}
+                                        </Text>
+                                        <Text>
+                                            {p.description}
+                                        </Text>
+                                    </ListItem>
+                                    
+                                ))}
+                            </List>
+                            {/* <List spacing={6}>
                                 <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/news/if-you-feel-it-chase-it-using-seismic-signals-to-detect-tornadoes/" target="_blank" rel="noopener noreferrer">
                                         If you feel it, chase it: using seismic signals to detect tornadoes
@@ -298,13 +332,12 @@ const Publications = () => {
                                         author of The Butchering Art, which won the 2018 PEN/E.O. Wilson Literary Science Writing Award.
                                     </Text>
                                 </ListItem>
-                            </List>
+                            </List> */}
                             
                         </Box>
                     </Box>
-                </PageTransition>
             </ChakraProvider>
         </>
     )
 }
-export default Publications;
+//export default Publications;
