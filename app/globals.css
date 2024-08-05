@@ -85,6 +85,11 @@ body {
   padding-bottom: 4rem;
 }
 
+.pink-button {
+  color:white !important;
+  background: var(--pink) !important;
+}
+
 
 @media screen and (width < 550px) {
 

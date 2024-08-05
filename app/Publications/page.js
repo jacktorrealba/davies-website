@@ -48,29 +48,6 @@ export default async function Publications() {
                             </List>
                             {/* <List spacing={6}>
                                 <ListItem className="publicationLink">
-                                    <Link className="pinkLink" href="https://www.earthscope.org/news/if-you-feel-it-chase-it-using-seismic-signals-to-detect-tornadoes/" target="_blank" rel="noopener noreferrer">
-                                        If you feel it, chase it: using seismic signals to detect tornadoes
-                                    </Link>
-                                    <Text className="publicationDate">
-                                        31 July 2024
-                                    </Text>
-                                    <Text>
-                                        The threat of destruction and injury the tornado chasers show viewers in the 2024 movie “Twisters” is real, 
-                                        so what can be done currently to warn against tornadoes, and how do we detect and track them using geophysics?
-                                    </Text>
-                                </ListItem>
-                                <ListItem className="publicationLink">
-                                    <Link className="pinkLink" href="https://www.earthscope.org/news/natural-hazards-put-some-species-at-increased-risk-of-extinction/" target="_blank" rel="noopener noreferrer">
-                                        Natural hazards put some species at increased risk of extinction
-                                    </Link>
-                                    <Text className="publicationDate">
-                                        30 July 2024
-                                    </Text>
-                                    <Text>
-                                    A new study looks at natural hazards occurring where at-risk species live in order to help guide conservation efforts for ensuring their survival.
-                                    </Text>
-                                </ListItem>
-                                <ListItem className="publicationLink">
                                     <Link className="pinkLink" href="https://www.earthscope.org/what-is/uas/" target="_blank" rel="noopener noreferrer">
                                         What are Uncrewed Aerial Systems?
                                     </Link>
