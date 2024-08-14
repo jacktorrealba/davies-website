@@ -18,6 +18,20 @@ body {
   overflow-x: hidden;
 }
 
+.tile {
+  background-color: var(--pink);
+}
+
+.tileLink {
+  color:#dd00ad;
+  text-decoration: none !important;
+}
+.tileLink:hover .tileCard{
+  text-decoration: none !important;
+  background-color: #dd00ad;
+  color: white;
+}
+
 #navContents, #pageContents {
   width: 100%;
 }
@@ -115,7 +129,44 @@ body {
   width: 100%;
 }
 
-@media screen and (width < 550px) {
+.pagination {
+  border: 2px solid var(--pink);
+  border-radius: 14px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.paginationLinkDisabled {
+  text-decoration: none !important;
+  cursor: auto !important;
+  opacity: 60 !important;
+  color: gray !important;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.paginationLinkDisable:hover {
+  text-decoration: none !important;
+  cursor: auto !important;
+  opacity: 60 !important;
+  color: gray !important;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.paginationLink {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.paginationLinkHighlight {
+  font-weight: bold;
+  color: var(--pink) !important;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+@media screen and (width <= 550px) {
+
+  #manageDiv {
+    height: auto;
+  }
+  
   #navContents {
     width: 100%;
   }
@@ -178,4 +229,37 @@ body {
   .myNavLink {
     padding: 0.25rem 0 0.25rem 0;
   }
+
+  .pagination {
+    border: 2px solid var(--pink);
+    border-radius: 14px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  
+  .paginationLinkDisabled {
+    text-decoration: none !important;
+    cursor: auto !important;
+    opacity: 60 !important;
+    color: gray !important;
+    padding: 0 1rem 0 1rem;
+  }
+  
+  .paginationLinkDisable:hover {
+    text-decoration: none !important;
+    cursor: auto !important;
+    opacity: 60 !important;
+    color: gray !important;
+    padding: 0 1rem 0 1rem;
+  }
+  
+  .paginationLink {
+    padding: 0 1rem 0 1rem;
+  }
+
+  #publicationCenter {
+    margin: 4rem 0 4rem 0;
+    padding: 0;
+    height: fit-content;
+  }
 }
+

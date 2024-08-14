@@ -24,5 +24,5 @@ export function middleware(request) {
 
 // apply the middleware to only the Manage page
 export const config = {
-    matcher: ['/Manage']
+    matcher: ['/Manage', '/AllPublications', '/EditPublication:path', '/AddPublication']
 }

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import { Box, Button, Center, FormControl, FormLabel, Input, Text } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { getApiURL } from "@/components/getApiURL";
 
 export default function Login() {
     // setting password and error variables
@@ -10,9 +10,10 @@ export default function Login() {
      // function executed on form submit
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const url = getApiURL() + "/auth"
         try {
             // fetch api - send password in the body
-            const res = await fetch('http://localhost:3000/api/auth', {
+            const res = await fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify({password})

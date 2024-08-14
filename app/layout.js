@@ -6,8 +6,7 @@ import Link from 'next/link'
 import { ChakraProvider, Flex, Box , List, ListItem, Menu, MenuList, MenuButton, MenuItem, Text} from "@chakra-ui/react";
 import { FaLinkedin, FaEnvelope, FaUser, FaFolder, FaHome } from "react-icons/fa";
 import PageTransition from "@/components/page-transition";
-import { Icon } from '@chakra-ui/react'
-import { FaCog } from "react-icons/fa";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
