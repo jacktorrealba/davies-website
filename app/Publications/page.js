@@ -72,7 +72,7 @@ export default async function Publications( {searchParams} ) {
                         </List>
                     </Box>
                     
-                    <Center mb="0.5rem" mt="14rem">
+                    <Center mb="7rem" mt="14rem">
                         <Box className="pagination">
                             {page === 1 ? (
                                 <Link className="paginationLinkDisabled">

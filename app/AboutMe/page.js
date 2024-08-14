@@ -10,7 +10,7 @@ const AboutMe = () => {
                         <Heading p="2rem 0 1rem 1rem">
                             ABOUT
                         </Heading>
-                        <Box p="0rem 3rem 0rem 3rem">
+                        <Box p="0rem 3rem 10rem 3rem">
                             <Box className="aboutMeBox">
                                 <Text as="span" className="boldText">Davie Nicole Loria</Text> &#40;she/her/hers&#41; was born and raised in New York.
                             </Box>

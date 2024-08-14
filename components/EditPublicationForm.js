@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { getApiURL } from "./getApiURL";
 import { useRouter } from "next/navigation";
-import {Center, Card, CardHeader,Heading,CardBody,FormControl,FormLabel, Input, Textarea, Button} from "@chakra-ui/react"
+import {Center, Card, CardHeader,Heading,CardBody,FormControl,FormLabel, Input, Textarea, Button, Link, CardFooter} from "@chakra-ui/react"
 import { formatDateDefault } from "@/utils/dateUtils";
 
 export default function EditPublicationForm({id, title, description, datePublished, url}) {
@@ -37,11 +37,11 @@ export default function EditPublicationForm({id, title, description, datePublish
     return (
         <>
             <Center id="publicationCenter" h="100vh">
-                <Center w="100%">
-                    <Card id="newPublicationCard" w="80%">
+                <Center w="100%" p="2rem 2rem 10rem 2rem">
+                    <Card id="newPublicationCard" w="80%" >
                         <CardHeader>
                             <Heading as='h2' size='lg' color="var(--pink)">
-                                Add New Publication
+                                Edit Publication
                             </Heading>
                         </CardHeader>
                         <CardBody>
@@ -67,6 +67,11 @@ export default function EditPublicationForm({id, title, description, datePublish
                                 </Center>
                             </form>
                         </CardBody>
+                        <CardFooter>
+                            <Center width='100%'>
+                                <Link className="pinkLink-sm" href="/Manage">Cancel</Link>
+                            </Center>
+                        </CardFooter>
                     </Card>
                 </Center>
             </Center>

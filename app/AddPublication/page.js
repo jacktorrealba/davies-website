@@ -38,7 +38,7 @@ export default function AddPublication() {
         }
     }    
     return <Center id="publicationCenter" h="100vh">
-            <Center w="100%">
+            <Center w="100%" p="2rem 2rem 10rem 2rem">
                 <Card id="newPublicationCard" w="80%">
                     <CardHeader>
                         <Heading as='h2' size='lg' color="var(--pink)">

@@ -50,7 +50,7 @@ export default async function AllPublications() {
                         <Link href="/Manage" className="pinkLink-sm">Go Back</Link>
                     </Box>
                 </Box>
-                <Center p="2rem" width="100%" height="inherit">
+                <Center p="2rem 2rem 10rem 2rem" width="100%" height="inherit">
                         <Table size='sm'>
                             <Thead>
                                 <Tr>
