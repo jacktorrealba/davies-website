@@ -17,10 +17,10 @@ const getPublicationById = async(id) => {
 export default async function EditPublication({params}) {
     const {id} = params;    
     const {publication} = await getPublicationById(id);
-    const {title, description, datePublished, url} = publication;
+    const {title, description, datePublished, url, isShown} = publication;
     return (
         
-        <EditPublicationForm id={id} title={title} description={description} datePublished={datePublished} url={url}/>
+        <EditPublicationForm id={id} title={title} description={description} datePublished={datePublished} url={url} isShown={isShown}/>
         
     )
 }

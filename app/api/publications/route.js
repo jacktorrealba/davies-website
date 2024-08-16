@@ -13,8 +13,8 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
-    const {title, url, description, datePublished} = await request.json();
+    const {title, url, description, datePublished, isShown} = await request.json();
     await connectMongoDb();
-    await Publication.create({title, url, description, datePublished});
+    await Publication.create({title, url, description, datePublished, isShown});
     return NextResponse.json({message: "Publication created"}, {status:201})
 }

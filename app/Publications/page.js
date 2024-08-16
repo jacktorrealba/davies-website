@@ -9,12 +9,12 @@ async function getPublications(perPage, page) {
     try {
         await connectMongoDb();
         const publications = await Publication
-            .find({}) // find all records
+            .find({isShown: true}) // find all records where isShown is true
             .skip(perPage * (page - 1)) // indicates which records to skip based on page number
             .sort({datePublished: -1}) // sort by latest date
             .limit(perPage); // limit by variable set below on export
 
-        const publicationsCount = await Publication.countDocuments(); // get the count of pages
+        const publicationsCount = await Publication.countDocuments({isShown: true}); // get the count of pages where isShown is true
         const response = {publications, publicationsCount};
         return response;
         
@@ -83,7 +83,6 @@ export default async function Publications( {searchParams} ) {
                                     Prev
                                 </Link>
                             )}
-
                             {pageNumbers.map((pageNumber, index) => (
                                 <Link 
                                     key={index}
@@ -95,11 +94,9 @@ export default async function Publications( {searchParams} ) {
                                     }
                                     href={`?page=${pageNumber}`}
                                     >
-
                                     {pageNumber}
                                 </Link>
                             ))}
-
                             {page === totalPages ? (
                                 <Link className="paginationLinkDisabled">
                                     Next

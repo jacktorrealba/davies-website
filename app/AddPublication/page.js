@@ -1,5 +1,5 @@
 'use client';
-import { Input, Center, Card, CardBody, CardHeader, FormControl, FormLabel, Textarea, Heading, Button, CardFooter, Link, Box } from '@chakra-ui/react'
+import { Input, Center, Card, CardBody, CardHeader, FormControl, FormLabel, Textarea, Heading, Button, CardFooter, Link, Box, Checkbox } from '@chakra-ui/react'
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { getApiURL } from '@/components/getApiURL';
@@ -14,9 +14,10 @@ export default function AddPublication() {
     const [description, setDescription] = useState("");
     const [datePublished, setDatePublished] = useState("");
     const [url, setUrl] = useState("");
+    const [isShown, setIsShown] = useState(false);
     const handleSubmit = async(e) => {
         e.preventDefault(); // prevent page refresh when button is clicked
-        if(!title || !description || !datePublished || !url) {
+        if(!title || !description || !datePublished || !url || !isShown) {
             alert("All fields are required");
             return;
         }
@@ -26,7 +27,7 @@ export default function AddPublication() {
             const res = await fetch(url, {
                 method: "POST",
                 headers: {"Content-Type": "appplication/json"},
-                body: JSON.stringify({title, description, datePublished, url})
+                body: JSON.stringify({title, description, datePublished, url, isShown})
             });
             if (res.ok) {
                 router.push('/');
@@ -62,6 +63,9 @@ export default function AddPublication() {
                             <FormControl mb="3">
                                 <FormLabel>Link</FormLabel>
                                 <Input onChange={(e) => setUrl(e.target.value)} value={url} type='text' variant='filled'></Input>
+                            </FormControl>
+                            <FormControl mb="3">
+                                <Checkbox onChange={(e) => setIsShown(e.target.checked)} value={isShown} colorScheme="pink">Enable Publication</Checkbox>
                             </FormControl>
                             <Center>
                                 <Button type='submit' className='pink-button'>Submit</Button>

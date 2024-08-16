@@ -5,7 +5,8 @@ const publicationSchema = new Schema(
         title: String,
         description: String,
         url: String,
-        datePublished: Date
+        datePublished: Date,
+        isShown: Boolean,
     }
 );
 

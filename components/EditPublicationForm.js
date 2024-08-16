@@ -3,26 +3,27 @@
 import { useState } from "react"
 import { getApiURL } from "./getApiURL";
 import { useRouter } from "next/navigation";
-import {Center, Card, CardHeader,Heading,CardBody,FormControl,FormLabel, Input, Textarea, Button, Link, CardFooter} from "@chakra-ui/react"
+import {Center, Card, CardHeader,Heading,CardBody,FormControl,FormLabel, Input, Textarea, Button, Link, CardFooter, Checkbox} from "@chakra-ui/react"
 import { formatDateDefault } from "@/utils/dateUtils";
 
-export default function EditPublicationForm({id, title, description, datePublished, url}) {
+export default function EditPublicationForm({id, title, description, datePublished, url, isShown}) {
     const formattedDate = formatDateDefault(datePublished);
     const router = useRouter()
     const [newTitle, setNewTitle] = useState(title);
     const [newDescription, setNewDescription] = useState(description);
     const [newDatePublished, setNewDatePublished] = useState(formattedDate);
     const [newURL, setNewURL] = useState(url);
+    const [newIsShown, setIsShown] = useState(isShown);
     
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const res = await fetch(getApiURL()+`/${id}`, {
+            const res = await fetch(getApiURL()+`/publications/${id}`, {
                 method: 'PUT',
                 headers: {
                     "Content-Type":"application/json",
                 },
-                body: JSON.stringify({newTitle, newDescription, newDatePublished, newURL})
+                body: JSON.stringify({newTitle, newDescription, newDatePublished, newURL, newIsShown})
             });
 
             if (!res.ok) {
@@ -61,6 +62,9 @@ export default function EditPublicationForm({id, title, description, datePublish
                                 <FormControl mb="3">
                                     <FormLabel>Link</FormLabel>
                                     <Input onChange={(e) => setNewURL(e.target.value)} value={newURL} type='text' variant='filled'></Input>
+                                </FormControl>
+                                <FormControl mb="3">
+                                    <Checkbox onChange={(e) => setIsShown(e.target.checked)} isChecked={newIsShown} colorScheme="pink">Enable Publication</Checkbox>
                                 </FormControl>
                                 <Center>
                                     <Button type='submit' className='pink-button'>Update</Button>
