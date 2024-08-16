@@ -33,7 +33,7 @@ async function getPublications() {
         const response = { publications };
         return response;
     } catch (error) {
-        throw new Error("Failed to fetch data")
+        throw new Error("Failed to retrieve data from database")
     }
 }
 export default async function AllPublications() {
