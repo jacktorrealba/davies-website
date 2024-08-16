@@ -7,8 +7,9 @@ export default function Home() {
   return (
     <>
       <ChakraProvider>
-        
-          <Box h="auto">
+        <Box display="flex" flexDirection="column" minHeight="100vh" >
+
+          <Box>
             <Heading id="welcomeMessage" p="5">
                 Welcome to Davie Loria&apos;s portfolio. 
             </Heading>
@@ -24,7 +25,7 @@ export default function Home() {
           <Flex id="featuredBox" pl="1rem" pr="1rem" justifyContent='space-between'>
             <Card w="48%" variant='filled'>
               <CardHeader>
-                <Heading size='md'>
+                <Heading className="featuredPubHeading" size='md'>
                   <Link className="pinkLink" href="https://www.earthscope.org/news/remote-sensing-and-armed-conflict-a-unique-humanitarian-role-for-geophysics/" target="_blank" rel="noopener noreferrer">
                     Remote sensing and armed conflict—a unique humanitarian role for geophysics
                   </Link>
@@ -39,7 +40,7 @@ export default function Home() {
             </Card>
             <Card w="48%" variant='filled'>
               <CardHeader>
-                <Heading size='md'>
+                <Heading className="featuredPubHeading" size='md'>
                 <Link className="pinkLink" href="https://www.usgs.gov/observatories/yvo/news/yellowstone-gps-stations-help-monitor-solar-storms-cause-widespread-auroras" target="_blank" rel="noopener noreferrer">
                     Yellowstone GPS stations help to monitor solar storms that cause widespread auroras
                 </Link>
@@ -53,9 +54,9 @@ export default function Home() {
           </Flex>
 
           <Box id="mobileBox" display="none">
-            <Card m="0 1rem 1rem 1rem" variant='filled'>
+            <Card m="0 1rem 1rem 1rem" variant='filled' size="sm">
                 <CardHeader>
-                  <Heading size='md'>
+                  <Heading size='sm'>
                     <Link className="pinkLink" href="https://www.earthscope.org/news/remote-sensing-and-armed-conflict-a-unique-humanitarian-role-for-geophysics/" target="_blank" rel="noopener noreferrer">
                       Remote sensing and armed conflict—a unique humanitarian role for geophysics
                     </Link>
@@ -70,7 +71,7 @@ export default function Home() {
               </Card>
               <Card m="0 1rem 1rem 1rem" variant='filled'>
                 <CardHeader>
-                  <Heading size='md'>
+                  <Heading size='sm'>
                   <Link className="pinkLink" href="https://www.usgs.gov/observatories/yvo/news/yellowstone-gps-stations-help-monitor-solar-storms-cause-widespread-auroras" target="_blank" rel="noopener noreferrer">
                       Yellowstone GPS stations help to monitor solar storms that cause widespread auroras
                   </Link>
@@ -84,11 +85,12 @@ export default function Home() {
           </Box>
 
 
-          <Center mt="5rem" mb="1rem">
+          <Center mt="auto" mb="2rem">
             <Link href="/Manage" color="lightgray">
               Manage
             </Link>
           </Center>
+        </Box>
       </ChakraProvider>
     </>
   )
