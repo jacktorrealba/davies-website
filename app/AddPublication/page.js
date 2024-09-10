@@ -23,8 +23,8 @@ export default function AddPublication() {
         }
 
         try {
-            const url = getApiURL() + '/publications';
-            const res = await fetch(url, {
+            const apiUrl = getApiURL() + '/publications';
+            const res = await fetch(apiUrl, {
                 method: "POST",
                 headers: {"Content-Type": "appplication/json"},
                 body: JSON.stringify({title, description, datePublished, url, isShown})

@@ -52,7 +52,8 @@ export default async function AllPublications() {
                     </Box>
                 </Box>
                 <Center p="2rem 2rem 10rem 2rem" width="100%" height="inherit">
-                        <Table size='sm'>
+                    <TableContainer height='525px' whiteSpace='none' overflowY='scroll'>
+                        <Table size='sm' >
                             <Thead>
                                 <Tr>
                                     <Th fontWeight="bold">
@@ -67,8 +68,8 @@ export default async function AllPublications() {
                             <Tbody>
                                 {data.publications.map((p) => (
                                     <Tr key={p._id}>
-                                        <Td>{p.title}</Td>
-                                        <Td width="50%">{p.description}</Td>
+                                        <Td width='30%'>{p.title}</Td>
+                                        <Td width='50%'>{p.description}</Td>
                                         <Td>
                                             <Link href={`/EditPublication/${p._id}`} textColor="var(--pink);">
                                                 Edit
@@ -78,6 +79,7 @@ export default async function AllPublications() {
                                 ))}
                             </Tbody>
                         </Table>
+                    </TableContainer>
                 </Center>
             </ChakraProvider>
         </>

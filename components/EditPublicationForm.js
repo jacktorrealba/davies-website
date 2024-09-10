@@ -75,7 +75,7 @@ export default function EditPublicationForm({id, title, description, datePublish
                     </CardBody>
                     <CardFooter>
                         <Center width='100%'>
-                            <Link className="pinkLink-sm" href="/Manage">Cancel</Link>
+                            <Link className="pinkLink-sm" href="/AllPublications">Cancel</Link>
                         </Center>
                     </CardFooter>
                 </Card>

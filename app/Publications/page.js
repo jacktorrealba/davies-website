@@ -26,7 +26,7 @@ async function getPublications(perPage, page) {
 export default async function Publications( {searchParams} ) {
     let page = parseInt(searchParams.page, 10);
     page = !page || page < 1 ? 1 : page;
-    const perPage = 2; // two records per page
+    const perPage = 5; // two records per page
     const data = await getPublications(perPage, page);
     const prevPage = page - 1 > 0 ? page -1 : 1; // if the current page minus 1 is greater than 0 then set the prevPage to that number otherwise set to 1
     const nextPage = page + 1; // our next page will always be the current page plus 1
